@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up for RailEasy</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/bg3.png');
+
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+        width: 150px;
+    }
+    .bg {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    input{
+        margin-bottom: 20px;
+        margin-top: 5px;
+        border-radius: 3px;
+    }
+    textarea{
+        margin-bottom: 20px;
+        margin-top: 5px;
+        border: 2px solid black;
+        border-radius: 3px;
+    }
+    form{
+        font-size: large;
+        color: black;
+        border: 3px solid skyblue;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        text-align: center;
+        background-color: rgba(0, 0, 255, 0.3);
+    }
+    label,p{
+        font-weight: bold;
+    }
+    a{
+        padding-top: 40px;
+        text-align: center;
+        font-size: large;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 5%;
+    }
+    h1,h2 {text-align: center;}
+</style>
+<body>
+    <!--<img src="img/bg1.jpg" alt="background image" class="bg">-->
+    <img src="img/bg.jpg" alt="logo" class="center">
+    <h2>RailEasy</h2>
+    <h1>Welcome to online rail reservation</h1>
+    <form action="index.php" method="POST">
+        <label for="user_name">User Name</label><br>
+        <input type="text" id="user_name" name="user_name"><br>
+        <label for="pwd">Password</label><br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <p>Select your gender</p>
+        <input type="radio" id="m" name="gender" value="m">
+        <label for="gender">Male</label>
+        <input type="radio" id="f" name="gender" value="f">
+        <label for="gender">Female</label>
+        <input type="radio" id="o" name="gender" value="o">
+        <label for="gender">Other</label><br>
+        <label for="dob">Select your Date of Birth</label><br>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="mobile">Mobile No.</label><br>
+        <input type="tel" id="mobile" name="mobile"><br>
+        <label for="address">Address</label><br>
+        <textarea name="address" id="address" cols="50" rows="3"></textarea><br>
+        <label for="city">City</label><br>
+        <input type="text" id="city" name="city"><br>
+        <input type="submit" value="Sign up">
+    </form>
+    <a href="home.html">Home</a>
+</body>
+</html>

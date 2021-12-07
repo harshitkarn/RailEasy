@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In for RailEasy</title>
+</head>
+<style>
+    body
+    {
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/bg3.png');
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+        width: 150px;
+    }
+    .bg {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    form{
+        border: 3px solid cadetblue;
+        border-radius: 10px;
+        display: block;
+        text-align: center;
+        font-size: x-large;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+    input{
+        padding: 10px 10px;
+        display: block;
+        border-radius: 10px;
+        margin: 20px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: large;
+    }
+    a{
+        padding-top: 40px;
+        text-align: center;
+        font-size: large;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 5%;
+    }
+    h1,h2 {text-align: center;}
+</style>
+<body>
+    <!--<img src="img/bg1.jpg" alt="background image" class="bg">-->
+    <img src="img/bg.jpg" alt="logo" class="center">
+    <h2>RailEasy</h2>
+    <h1>Welcome to online rail reservation</h1>
+    <form action="userhome.php" method="POST">
+        <label for="user_name"><b>User Name</b></label><br>
+        <input type="text" id="user_name" name="user_name"><br>
+        <label for="pwd"><b>Password</b></label><br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <input type="submit" value="Sign in">
+    </form>
+    <a href="home.html">Home</a>
+</body>
+</html>
